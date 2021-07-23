@@ -1,0 +1,42 @@
+enable-migrations
+add-migration InitialModel
+add-migration InitialModel -IgnoreChanges -Force 
+// Ignora na migration inicial os modelos gerados automaticamente, gerando uma migration vazia, o entity framework só trabalha com no minimo
+1 migration pendente, então é necessário inicializar a primeira vazia e dar update-database para ela ser registrada na base de dados
+//-IgnoreChanges faz com que as mudanças não sejam detectadas pelo ef
+//-Force faz com que a migration substinua a outra com o mesmo nome
+update-database
+
+add-migration AddCategoryTable
+add-migration AddCategoryTable -Force
+update-database
+
+add-migration AddCategoryColumnToCoursesTable
+update-database
+
+add-migration AddDatePublishedColumnToCoursesTable
+update-database
+
+add-migration RenameTitleToNameInCoursesTable
+//update-database -target AddDatePublishedColumnToCoursesTable
+//Fiz update-database antes da hora com codigo errado, tive que desfazer essa migration, arruma ro codigo e dar update-database novamente
+update-database
+
+add-migration DeleteDatePublishedColumnFromCoursesTable
+update-database
+
+add-migration DeleteCategoryColumnFromCoursesTable
+update-database
+
+add-migration DeleteCategoryTable
+update-database
+
+update-database -target DeleteDatePublishedColumnFromCoursesTable
+//Atualiza a base de dados para a migration informada, M8 de 15 por exemplo
+update-database
+//Atualiza a base de dados para a ultima migration feita M15 de 15 por exemplo
+
+add-migration PopulateCategoryTable
+update-database -target DeleteCategoryTable 
+//Nesse projeto remove-migration, que deveria remover a última migration, não funcionou por nada!
+//Mas já que foi dado update-database em uma migration anterior isso significa que o Down() da migration que quero remover ja foi executado e portanto, não //está presente na tabela de migrations da database, logo posso excluir a última migration manualmente.

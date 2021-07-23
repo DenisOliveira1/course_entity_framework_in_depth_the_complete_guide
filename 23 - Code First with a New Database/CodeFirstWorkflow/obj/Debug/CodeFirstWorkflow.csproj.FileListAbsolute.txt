@@ -1,0 +1,14 @@
+C:\Users\Denis\Desktop\CodeFirstWorkflow\bin\Debug\CodeFirstWorkflow.exe.config
+C:\Users\Denis\Desktop\CodeFirstWorkflow\bin\Debug\CodeFirstWorkflow.exe
+C:\Users\Denis\Desktop\CodeFirstWorkflow\bin\Debug\CodeFirstWorkflow.pdb
+C:\Users\Denis\Desktop\CodeFirstWorkflow\bin\Debug\EntityFramework.dll
+C:\Users\Denis\Desktop\CodeFirstWorkflow\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Denis\Desktop\CodeFirstWorkflow\bin\Debug\EntityFramework.xml
+C:\Users\Denis\Desktop\CodeFirstWorkflow\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Denis\Desktop\CodeFirstWorkflow\obj\Debug\CodeFirstWorkflow.csprojAssemblyReference.cache
+C:\Users\Denis\Desktop\CodeFirstWorkflow\obj\Debug\CodeFirstWorkflow.csproj.CoreCompileInputs.cache
+C:\Users\Denis\Desktop\CodeFirstWorkflow\obj\Debug\CodeFirstWorkflow.csproj.CopyComplete
+C:\Users\Denis\Desktop\CodeFirstWorkflow\obj\Debug\CodeFirstWorkflow.exe
+C:\Users\Denis\Desktop\CodeFirstWorkflow\obj\Debug\CodeFirstWorkflow.pdb
+C:\Users\Denis\Desktop\CodeFirstWorkflow\obj\Debug\CodeFirstWorkflow.Migrations.InitialModel.resources
+C:\Users\Denis\Desktop\CodeFirstWorkflow\obj\Debug\CodeFirstWorkflow.csproj.GenerateResource.cache
